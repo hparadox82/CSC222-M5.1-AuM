@@ -33,18 +33,6 @@ int main()
     cout << "UPDATED PRODUCTION WORKER PROFILE:" << endl;
     w1.printProdWorker();
 
-    //shift sup class:
-    Sup s1("Austin Wilhelm Moldred", "SU0001", "11 September 2020", 105000, 1000);
-    cout << "SUPERVISOR PROFILE:" << endl;
-    s1.printshiftSup();
-    //updating...
-    s1.setAnnSal(110000);
-    s1.setAPBonus(800);
-    s1.setName("A. W. Moldred");
-    cout << "UPDATED SUPERVISOR PROFILE:" << endl;
-    s1.printshiftSup();
-
-
     //teamlead class:
     teamLead t1("Timothy Himothy Sallo", "TL001", "08 January 2021", 1, 46.75, 2500, 80, 79);
     teamLead t2("John Dart Davis, 2", "TL002", "15 October 2022", 2, 46.75, 2500, 80, 75);
@@ -57,6 +45,28 @@ int main()
     t1, t2.setHourly(50.00);
     cout << "UPDATED TEAM LEAD PROFILE:" << endl;
     t1, t2.printteamLead();
+
+    //sup class:
+    Sup s1("Austin Wilhelm Moldred", "SU0001", "11 September 2020", 105000, 1000);
+    cout << "SUPERVISOR PROFILE:" << endl;
+    s1.printshiftSup();
+    //updating...
+    s1.setAnnSal(110000);
+    s1.setAPBonus(800);
+    s1.setName("A. W. Moldred");
+    cout << "UPDATED SUPERVISOR PROFILE:" << endl;
+    s1.printshiftSup();
+
+    string custname, custeNum, custHD;
+    cout << "Input custom employee details:" << endl;
+    cout << "Name (no spaces!):" << endl;
+    cin >> custname;
+    cout << "Employee number:" << endl;
+    cin >> custeNum;
+    cout << "Hire date:" << endl;
+    cin >> custHD;
+    Employee cust1(custname, custeNum, custHD);
+    cust1.printEmployee();
 
     return 0;
 }

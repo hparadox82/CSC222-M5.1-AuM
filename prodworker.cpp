@@ -91,5 +91,5 @@ void ProdWorker::printProdWorker() const
 		cout << "ERROR: Unknown or invalid shift (" << shift << ")" << endl;
 	}
 	cout << "\nHOURLY RATE: $" << fixed << setprecision(2) << hourPay << endl;
-	cout << "==============================" << endl;
+	cout << "...............................\n" << endl;
 }

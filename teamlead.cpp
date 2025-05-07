@@ -90,4 +90,5 @@ void teamLead::printteamLead() const
 	Employee::printEmployee();
 	ProdWorker::printProdWorker();
 	cout << "MONTHLY BONUS: $" << fixed << setprecision(2) << moBonus << "\nREQUIRED TRAINING HOURS: " << reqTrainHr << "\nATTENDED TRAINING HOURS: " << attTrainHr << endl;
+	cout << "===============================\n" << endl;
 }

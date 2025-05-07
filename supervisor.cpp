@@ -76,5 +76,5 @@ void Sup::printshiftSup() const
 {
 	Employee::printEmployee();
 	cout << "ANNUAL SALARY: $" << fixed << setprecision(2) << annSal << "\nANNUAL PRODUCTION BONUS: $" << fixed << setprecision(2) << annProdBonus << endl;
-	cout << "==============================" << endl;
+	cout << "==============================\n" << endl;
 }
