@@ -68,5 +68,9 @@ int main()
     Employee cust1(custname, custeNum, custHD);
     cust1.printEmployee();
 
+    e1,cust1.~Employee();
+    t1, t2.~teamLead();
+    s1.~Sup();
+
     return 0;
 }
